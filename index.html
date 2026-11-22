@@ -1,0 +1,1236 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>91推特每日大赛 - 精选内容 | 视频创作者社区官方门户</title>
+<meta name="description" content="91推特每日大赛官方视频门户，汇聚91推特每日大赛精品原创内容、创作者动态与社区话题，专业高清视频品牌社区持续运营中。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111827'/%3E%3Cpath d='M18 20h10l4 12 4-12h10L36 46h-8z' fill='%23f97316'/%3E%3C/svg%3E">
+<style>
+:root{
+  --dtj-ink:#111827;
+  --dtj-ink-soft:#374151;
+  --dtj-grey:#6b7280;
+  --dtj-line:#e5e7eb;
+  --dtj-bg:#f7f7f5;
+  --dtj-paper:#ffffff;
+  --dtj-accent:#f97316;
+  --dtj-accent-deep:#c2410c;
+  --dtj-accent-soft:#ffedd5;
+  --dtj-blue:#1e3a8a;
+  --dtj-green:#0f766e;
+  --dtj-radius:14px;
+  --dtj-sticky-h:104px;
+  --dtj-shadow:0 6px 24px rgba(17,24,39,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--dtj-sticky-h)}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  background:var(--dtj-bg);
+  color:var(--dtj-ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+ul{list-style:none}
+.dtj-sticky{position:sticky;top:0;z-index:60}
+
+/* 公告条 */
+.dtj-announce{
+  background:linear-gradient(90deg,#111827,#1f2937 55%,#7c2d12);
+  color:#fde68a;
+  font-size:13px;
+  letter-spacing:.02em;
+}
+.dtj-announce-inner{
+  max-width:1200px;margin:0 auto;padding:8px 20px;
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+}
+.dtj-announce-tag{
+  background:var(--dtj-accent);color:#fff;font-size:11px;font-weight:700;
+  padding:2px 8px;border-radius:999px;white-space:nowrap;
+}
+.dtj-announce-text{color:#fef3c7}
+.dtj-announce-text b{color:#fff}
+.dtj-announce-more{margin-left:auto;color:#fdba74;font-size:12px;border-bottom:1px dashed #fdba74}
+
+/* 页头 */
+.dtj-header{background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--dtj-line)}
+.dtj-header-inner{
+  max-width:1200px;margin:0 auto;padding:12px 20px;
+  display:flex;align-items:center;gap:20px;
+}
+.dtj-brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.dtj-brand-logo{
+  width:42px;height:42px;border-radius:12px;
+  background:var(--dtj-ink);color:#fff;display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:18px;letter-spacing:-1px;
+}
+.dtj-brand-logo span{color:var(--dtj-accent)}
+.dtj-brand-name{font-size:17px;font-weight:800;line-height:1.2}
+.dtj-brand-sub{font-size:11px;color:var(--dtj-grey);letter-spacing:.14em}
+.dtj-nav{display:flex;gap:4px;margin-left:8px;flex-wrap:wrap}
+.dtj-nav a{
+  font-size:14px;color:var(--dtj-ink-soft);padding:6px 10px;border-radius:8px;transition:.2s;
+}
+.dtj-nav a:hover{background:var(--dtj-accent-soft);color:var(--dtj-accent-deep)}
+.dtj-header-tools{margin-left:auto;display:flex;align-items:center;gap:10px}
+.dtj-search{
+  display:flex;align-items:center;gap:6px;background:#f3f4f6;border:1px solid transparent;
+  border-radius:999px;padding:4px 6px 4px 12px;transition:.2s;
+}
+.dtj-search:focus-within{border-color:var(--dtj-accent);background:#fff;box-shadow:0 0 0 3px var(--dtj-accent-soft)}
+.dtj-search input{
+  border:none;background:transparent;outline:none;font-size:13px;width:150px;color:var(--dtj-ink);
+}
+.dtj-search-btn{
+  background:var(--dtj-ink);color:#fff;font-size:12px;padding:5px 12px;border-radius:999px;
+}
+.dtj-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  font-size:14px;font-weight:600;padding:9px 18px;border-radius:999px;transition:.2s;
+}
+.dtj-btn-primary{background:var(--dtj-accent);color:#fff;box-shadow:0 4px 14px rgba(249,115,22,.32)}
+.dtj-btn-primary:hover{background:var(--dtj-accent-deep);transform:translateY(-1px)}
+.dtj-btn-ghost{border:1px solid var(--dtj-line);color:var(--dtj-ink-soft);background:#fff}
+.dtj-btn-ghost:hover{border-color:var(--dtj-ink);color:var(--dtj-ink)}
+.dtj-btn-dark{background:var(--dtj-ink);color:#fff}
+.dtj-burger{display:none;font-size:22px;color:var(--dtj-ink);padding:4px 8px}
+.dtj-search-feedback{
+  position:absolute;top:calc(100% + 8px);right:20px;max-width:1200px;
+  background:#fff;border:1px solid var(--dtj-line);border-radius:12px;box-shadow:var(--dtj-shadow);
+  padding:10px 16px;font-size:13px;color:var(--dtj-ink-soft);display:none;z-index:70;
+}
+.dtj-search-feedback.show{display:block}
+.dtj-search-feedback b{color:var(--dtj-accent-deep)}
+
+/* 通用容器 */
+.dtj-wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.dtj-section{padding:56px 0}
+.dtj-section-head{margin-bottom:28px;display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.dtj-kicker{
+  display:inline-block;font-size:12px;letter-spacing:.22em;color:var(--dtj-accent-deep);
+  font-weight:700;text-transform:uppercase;margin-bottom:6px;
+}
+.dtj-h2{font-size:clamp(22px,3vw,30px);font-weight:800;line-height:1.3;letter-spacing:-.01em}
+.dtj-h2 em{font-style:normal;color:var(--dtj-accent)}
+.dtj-section-desc{font-size:14px;color:var(--dtj-grey);max-width:640px}
+.dtj-h3{font-size:17px;font-weight:700;line-height:1.45;margin-bottom:6px}
+.dtj-card{background:var(--dtj-paper);border-radius:var(--dtj-radius);box-shadow:var(--dtj-shadow)}
+
+/* 首屏 —— 左文右侧大图与数据条 */
+.dtj-hero{
+  background:linear-gradient(180deg,#fff 0%,#faf7f2 100%);
+  border-bottom:1px solid var(--dtj-line);
+  overflow:hidden;
+}
+.dtj-hero-grid{
+  max-width:1200px;margin:0 auto;padding:48px 20px 44px;
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:44px;align-items:center;
+}
+.dtj-hero-tag{
+  display:inline-flex;align-items:center;gap:8px;background:var(--dtj-ink);color:#fff;
+  font-size:12px;font-weight:700;padding:5px 14px;border-radius:999px;letter-spacing:.06em;
+}
+.dtj-hero-tag span{width:6px;height:6px;border-radius:50%;background:var(--dtj-accent);display:inline-block}
+.dtj-hero h1{
+  font-size:clamp(34px,5.4vw,60px);line-height:1.12;font-weight:900;letter-spacing:-.03em;
+  margin:18px 0 12px;
+}
+.dtj-hero h1 em{font-style:normal;color:var(--dtj-accent);position:relative}
+.dtj-hero h1 em::after{
+  content:"";position:absolute;left:0;right:0;bottom:4px;height:10px;background:var(--dtj-accent-soft);
+  z-index:-1;border-radius:4px;
+}
+.dtj-hero-slogan{font-size:17px;color:var(--dtj-ink-soft);font-weight:600;margin-bottom:12px}
+.dtj-hero-intro{font-size:14.5px;color:var(--dtj-grey);max-width:560px;margin-bottom:22px}
+.dtj-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.dtj-hero-stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;
+  border-top:1px solid var(--dtj-line);padding-top:20px;max-width:560px;
+}
+.dtj-hero-stat b{display:block;font-size:26px;font-weight:900;letter-spacing:-.02em;line-height:1.1}
+.dtj-hero-stat span{font-size:12px;color:var(--dtj-grey)}
+.dtj-hero-visual{position:relative}
+.dtj-hero-shot{
+  border-radius:20px;overflow:hidden;box-shadow:0 20px 50px rgba(17,24,39,.18);
+  aspect-ratio:16/11;background:#111827;
+}
+.dtj-hero-shot img{width:100%;height:100%;object-fit:cover}
+.dtj-hero-badge{
+  position:absolute;left:-14px;bottom:26px;background:#fff;border-radius:14px;
+  padding:12px 16px;box-shadow:0 12px 30px rgba(17,24,39,.16);display:flex;align-items:center;gap:10px;
+}
+.dtj-hero-badge-ico{
+  width:36px;height:36px;border-radius:10px;background:var(--dtj-accent);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:16px;
+}
+.dtj-hero-badge b{display:block;font-size:14px;line-height:1.2}
+.dtj-hero-badge span{font-size:11px;color:var(--dtj-grey)}
+
+/* 焦点内容 */
+.dtj-focus-grid{
+  display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:24px;
+}
+.dtj-focus-main{
+  border-radius:var(--dtj-radius);overflow:hidden;background:#0f172a;position:relative;color:#fff;
+  display:flex;flex-direction:column;
+}
+.dtj-focus-main img{width:100%;aspect-ratio:16/9;object-fit:cover;opacity:.92}
+.dtj-focus-body{padding:20px}
+.dtj-focus-body h3{font-size:20px;font-weight:800;margin-bottom:8px}
+.dtj-focus-body p{font-size:13.5px;color:#cbd5e1;margin-bottom:14px}
+.dtj-meta{display:flex;align-items:center;gap:12px;font-size:12px;color:#94a3b8;flex-wrap:wrap}
+.dtj-author-chip{display:inline-flex;align-items:center;gap:6px;color:#fde68a;font-weight:600}
+.dtj-avatar{
+  width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;
+  font-size:12px;font-weight:800;color:#fff;flex-shrink:0;background:var(--dtj-accent);
+}
+.dtj-focus-list{display:flex;flex-direction:column;gap:14px}
+.dtj-focus-item{
+  display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;background:#fff;
+  border-radius:12px;padding:12px;box-shadow:0 2px 10px rgba(17,24,39,.05);transition:.22s;
+}
+.dtj-focus-item:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(17,24,39,.1)}
+.dtj-focus-item img{width:96px;height:72px;object-fit:cover;border-radius:8px}
+.dtj-focus-item h3{font-size:14.5px;font-weight:700;margin-bottom:4px}
+.dtj-focus-item p{font-size:12px;color:var(--dtj-grey);line-height:1.5}
+.dtj-tag{
+  display:inline-block;font-size:11px;color:var(--dtj-accent-deep);background:var(--dtj-accent-soft);
+  padding:1px 8px;border-radius:999px;margin:4px 4px 0 0;
+}
+.dtj-tag-blue{color:#1e3a8a;background:#e0e7ff}
+.dtj-tag-green{color:#0f766e;background:#ccfbf1}
+
+/* 视频列表 */
+.dtj-video-list{display:flex;flex-direction:column;gap:0;background:#fff;border-radius:var(--dtj-radius);overflow:hidden;box-shadow:var(--dtj-shadow)}
+.dtj-video-row{
+  display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:16px;align-items:start;
+  padding:18px 22px;border-bottom:1px solid var(--dtj-line);transition:.2s;
+}
+.dtj-video-row:last-child{border-bottom:none}
+.dtj-video-row:hover{background:#fffdf9}
+.dtj-video-rank{font-size:20px;font-weight:900;color:var(--dtj-line);letter-spacing:-.03em}
+.dtj-video-row:nth-child(1) .dtj-video-rank{color:var(--dtj-accent)}
+.dtj-video-row:nth-child(2) .dtj-video-rank{color:#f59e0b}
+.dtj-video-row:nth-child(3) .dtj-video-rank{color:#a16207}
+.dtj-video-title{font-size:15.5px;font-weight:700;margin-bottom:4px}
+.dtj-video-summary{font-size:12.5px;color:var(--dtj-grey);max-width:640px;margin-bottom:8px}
+.dtj-video-info{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--dtj-grey)}
+.dtj-video-actions{display:flex;gap:8px;align-items:center;padding-top:2px}
+.dtj-act{
+  font-size:12px;color:var(--dtj-grey);border:1px solid var(--dtj-line);border-radius:999px;
+  padding:4px 10px;transition:.2s;white-space:nowrap;
+}
+.dtj-act:hover{border-color:var(--dtj-accent);color:var(--dtj-accent-deep)}
+.dtj-act.on{background:var(--dtj-accent);border-color:var(--dtj-accent);color:#fff}
+.dtj-act.heart.on{background:#f43f5e;border-color:#f43f5e}
+
+/* 关键词解析 */
+.dtj-analysis{background:#111827;color:#e5e7eb}
+.dtj-analysis .dtj-kicker{color:#fdba74}
+.dtj-analysis .dtj-h2{color:#fff}
+.dtj-analysis .dtj-section-desc{color:#9ca3af}
+.dtj-analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:8px}
+.dtj-analysis-card{
+  background:#1f2937;border:1px solid #374151;border-radius:var(--dtj-radius);padding:24px;
+}
+.dtj-analysis-card h3{font-size:16.5px;font-weight:800;color:#fff;margin-bottom:10px;display:flex;gap:8px;align-items:center}
+.dtj-analysis-card h3 i{color:var(--dtj-accent);font-style:normal;font-size:13px;font-weight:800}
+.dtj-analysis-card p{font-size:13.5px;color:#cbd5e1;line-height:1.85}
+.dtj-analysis-card p+p{margin-top:10px}
+.dtj-analysis-hl{color:#fdba74;font-weight:600}
+
+/* 专题 */
+.dtj-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.dtj-topic{
+  background:#fff;border-radius:var(--dtj-radius);padding:22px;box-shadow:var(--dtj-shadow);
+  display:flex;flex-direction:column;border-top:4px solid var(--dtj-accent);
+}
+.dtj-topic:nth-child(2){border-top-color:var(--dtj-blue)}
+.dtj-topic:nth-child(3){border-top-color:var(--dtj-green)}
+.dtj-topic-status{
+  align-self:flex-start;font-size:11px;font-weight:700;padding:2px 10px;border-radius:999px;
+  background:#f3f4f6;color:var(--dtj-ink-soft);margin-bottom:10px;
+}
+.dtj-topic-status.live{background:#dcfce7;color:#15803d}
+.dtj-topic h3{font-size:18px;font-weight:800;margin-bottom:8px}
+.dtj-topic p{font-size:13px;color:var(--dtj-grey);margin-bottom:14px}
+.dtj-topic ol{list-style:none;display:flex;flex-direction:column;gap:8px;margin-top:auto}
+.dtj-topic ol li{font-size:12.5px;color:var(--dtj-ink-soft);display:flex;gap:8px}
+.dtj-topic ol li i{font-style:normal;color:var(--dtj-accent);font-weight:800}
+
+/* 作者矩阵 —— 双列简介 */
+.dtj-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.dtj-author-card{
+  background:#fff;border-radius:var(--dtj-radius);padding:20px;box-shadow:var(--dtj-shadow);
+  display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;align-items:start;
+}
+.dtj-author-face{
+  width:64px;height:64px;border-radius:16px;display:flex;align-items:center;justify-content:center;
+  font-size:22px;font-weight:900;color:#fff;
+}
+.dtj-author-card h3{font-size:16px;font-weight:800;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.dtj-author-card h3 small{font-size:11px;font-weight:600;color:var(--dtj-accent-deep);background:var(--dtj-accent-soft);padding:1px 8px;border-radius:999px}
+.dtj-author-field{font-size:12px;color:var(--dtj-grey);margin:2px 0 8px}
+.dtj-author-desc{font-size:12.5px;color:var(--dtj-ink-soft);line-height:1.7}
+.dtj-author-nums{display:flex;gap:16px;font-size:12px;color:var(--dtj-grey);margin-top:10px}
+.dtj-author-nums b{color:var(--dtj-ink);font-size:13px}
+
+/* 榜单 */
+.dtj-board-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.dtj-board{background:#fff;border-radius:var(--dtj-radius);padding:22px;box-shadow:var(--dtj-shadow)}
+.dtj-board h3{font-size:15px;font-weight:800;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.dtj-board h3 span{font-size:11px;font-weight:600;color:var(--dtj-grey)}
+.dtj-board ol{list-style:none;display:flex;flex-direction:column;gap:12px}
+.dtj-board li{display:flex;align-items:center;gap:10px;font-size:13px}
+.dtj-board li b{width:20px;font-size:12px;color:var(--dtj-grey);flex-shrink:0}
+.dtj-board li .nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--dtj-ink-soft)}
+.dtj-board li .vv{font-size:12px;color:var(--dtj-accent-deep);font-weight:700;flex-shrink:0}
+
+/* 评价 —— 双列短评 */
+.dtj-comment-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.dtj-comment{
+  background:#fff;border-radius:var(--dtj-radius);padding:18px 20px;box-shadow:var(--dtj-shadow);
+  font-size:13.5px;color:var(--dtj-ink-soft);border-left:4px solid var(--dtj-accent-soft);
+}
+.dtj-comment:nth-child(3n+2){border-left-color:#bfdbfe}
+.dtj-comment:nth-child(3n){border-left-color:#99f6e4}
+.dtj-comment p{line-height:1.8}
+.dtj-comment-foot{display:flex;align-items:center;gap:8px;margin-top:12px;font-size:12px;color:var(--dtj-grey)}
+.dtj-stars{color:#f59e0b;letter-spacing:1px;font-size:12px}
+
+/* 企业动态 + FAQ */
+.dtj-news-faq{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:26px;align-items:start}
+.dtj-news li{
+  display:grid;grid-template-columns:74px minmax(0,1fr);gap:14px;padding:14px 0;border-bottom:1px dashed var(--dtj-line);
+}
+.dtj-news li:last-child{border-bottom:none}
+.dtj-news time{font-size:12px;color:var(--dtj-accent-deep);font-weight:700}
+.dtj-news h3{font-size:14.5px;font-weight:700;margin-bottom:2px}
+.dtj-news p{font-size:12.5px;color:var(--dtj-grey)}
+.dtj-faq details{
+  background:#fff;border-radius:12px;padding:14px 18px;box-shadow:0 2px 10px rgba(17,24,39,.05);
+  margin-bottom:10px;
+}
+.dtj-faq summary{
+  font-size:14px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px;
+}
+.dtj-faq summary::-webkit-details-marker{display:none}
+.dtj-faq summary::after{content:"+";color:var(--dtj-accent);font-size:18px;font-weight:800;line-height:1}
+.dtj-faq details[open] summary::after{content:"−"}
+.dtj-faq details p{font-size:13px;color:var(--dtj-grey);margin-top:10px;line-height:1.75}
+
+/* 合作墙 */
+.dtj-partners{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.dtj-partner{
+  background:#fff;border-radius:12px;padding:18px;text-align:center;box-shadow:0 2px 10px rgba(17,24,39,.05);
+}
+.dtj-partner b{display:block;font-size:14px;font-weight:800;margin-bottom:2px}
+.dtj-partner span{font-size:11px;color:var(--dtj-grey)}
+
+/* 页脚 */
+.dtj-footer{background:#0b1220;color:#9ca3af;padding:48px 0 26px;margin-top:24px}
+.dtj-footer-grid{display:grid;grid-template-columns:1.4fr repeat(3,minmax(0,1fr));gap:32px}
+.dtj-footer h4{color:#fff;font-size:14px;font-weight:800;margin-bottom:12px}
+.dtj-footer p{font-size:12.5px;line-height:1.8}
+.dtj-footer li{font-size:12.5px;margin-bottom:8px}
+.dtj-footer a:hover{color:#fdba74}
+.dtj-footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.dtj-footer-brand .dtj-brand-logo{background:#1f2937}
+.dtj-footer-bottom{
+  border-top:1px solid #1f2937;margin-top:34px;padding-top:18px;
+  display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between;font-size:12px;color:#6b7280;
+}
+.dtj-footer-words{display:flex;gap:14px;flex-wrap:wrap}
+
+/* 回到顶部 & Toast */
+.dtj-top{
+  position:fixed;right:20px;bottom:24px;width:44px;height:44px;border-radius:50%;
+  background:var(--dtj-ink);color:#fff;font-size:18px;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 22px rgba(17,24,39,.28);opacity:0;pointer-events:none;transition:.25s;z-index:80;
+}
+.dtj-top.show{opacity:1;pointer-events:auto}
+.dtj-toast{
+  position:fixed;left:50%;bottom:36px;transform:translate(-50%,20px);background:var(--dtj-ink);color:#fff;
+  font-size:13px;padding:10px 20px;border-radius:999px;box-shadow:var(--dtj-shadow);
+  opacity:0;pointer-events:none;transition:.25s;z-index:90;max-width:90vw;
+}
+.dtj-toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* 弹窗 */
+.dtj-modal-mask{
+  position:fixed;inset:0;background:rgba(11,18,32,.62);display:none;align-items:center;justify-content:center;
+  padding:20px;z-index:100;
+}
+.dtj-modal-mask.show{display:flex}
+.dtj-modal{
+  background:#fff;border-radius:18px;max-width:520px;width:100%;padding:26px;box-shadow:0 30px 70px rgba(0,0,0,.32);
+  max-height:88vh;overflow:auto;
+}
+.dtj-modal h3{font-size:18px;font-weight:800;margin-bottom:8px}
+.dtj-modal p{font-size:13.5px;color:var(--dtj-grey);margin-bottom:16px}
+.dtj-modal label{display:block;font-size:12.5px;font-weight:700;margin-bottom:4px;color:var(--dtj-ink-soft)}
+.dtj-modal input,.dtj-modal textarea,.dtj-modal select{
+  width:100%;border:1px solid var(--dtj-line);border-radius:10px;padding:9px 12px;font-size:13px;
+  font-family:inherit;margin-bottom:12px;outline:none;background:#fff;
+}
+.dtj-modal input:focus,.dtj-modal textarea:focus,.dtj-modal select:focus{border-color:var(--dtj-accent);box-shadow:0 0 0 3px var(--dtj-accent-soft)}
+.dtj-modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:6px}
+.dtj-share-list{display:flex;gap:10px;flex-wrap:wrap}
+.dtj-share-list button{
+  border:1px solid var(--dtj-line);border-radius:10px;padding:8px 14px;font-size:13px;color:var(--dtj-ink-soft);
+}
+.dtj-share-list button:hover{border-color:var(--dtj-accent);color:var(--dtj-accent-deep)}
+
+@media (max-width:980px){
+  .dtj-hero-grid{grid-template-columns:1fr;gap:30px;padding-top:36px}
+  .dtj-focus-grid{grid-template-columns:1fr}
+  .dtj-topic-grid{grid-template-columns:1fr 1fr}
+  .dtj-board-grid{grid-template-columns:1fr}
+  .dtj-news-faq{grid-template-columns:1fr}
+  .dtj-footer-grid{grid-template-columns:1fr 1fr}
+  .dtj-nav{display:none}
+  .dtj-nav.open{display:flex;position:absolute;left:0;right:0;top:100%;background:#fff;padding:12px 20px;box-shadow:var(--dtj-shadow);border-bottom:1px solid var(--dtj-line);z-index:65}
+  .dtj-header-inner{position:relative;flex-wrap:wrap}
+  .dtj-burger{display:block}
+  .dtj-header-tools{margin-left:auto}
+}
+@media (max-width:720px){
+  .dtj-analysis-grid{grid-template-columns:1fr}
+  .dtj-author-grid{grid-template-columns:1fr}
+  .dtj-comment-grid{grid-template-columns:1fr}
+  .dtj-topic-grid{grid-template-columns:1fr}
+  .dtj-partners{grid-template-columns:1fr 1fr}
+  .dtj-footer-grid{grid-template-columns:1fr}
+  .dtj-search input{width:96px}
+  .dtj-video-row{grid-template-columns:32px minmax(0,1fr);}
+  .dtj-video-actions{grid-column:2;justify-content:flex-start}
+  .dtj-hero-stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .dtj-hero-stat b{font-size:20px}
+  .dtj-announce-more{display:none}
+  :root{--dtj-sticky-h:118px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- S1 公告条 + 页头（吸顶） -->
+<div class="dtj-sticky">
+  <div class="dtj-announce">
+    <div class="dtj-announce-inner">
+      <span class="dtj-announce-tag">每日大赛</span>
+      <span class="dtj-announce-text"><b>第 128 期赛程开启</b>：本周新增 36 条官方精选作品，创作者挑战赛报名通道同步开放。</span>
+      <a class="dtj-announce-more" href="#dtj-topics">查看赛程详情 ›</a>
+    </div>
+  </div>
+  <header class="dtj-header">
+    <div class="dtj-header-inner">
+      <a class="dtj-brand" href="#dtj-hero">
+        <div class="dtj-brand-logo">91<span>·</span>TV</div>
+        <div>
+          <div class="dtj-brand-name">91推特每日大赛</div>
+          <div class="dtj-brand-sub">OFFICIAL VIDEO PORTAL</div>
+        </div>
+      </a>
+      <nav class="dtj-nav" id="dtjNav">
+        <a href="#dtj-focus">焦点推荐</a>
+        <a href="#dtj-videos">热门视频</a>
+        <a href="#dtj-analysis">品牌解析</a>
+        <a href="#dtj-topics">专题企划</a>
+        <a href="#dtj-authors">创作者</a>
+        <a href="#dtj-board">数据榜单</a>
+        <a href="#dtj-faq">帮助中心</a>
+      </nav>
+      <div class="dtj-header-tools">
+        <div class="dtj-search">
+          <input type="text" id="dtjSearchInput" placeholder="搜索作品、作者、话题" aria-label="站内搜索">
+          <button class="dtj-search-btn" id="dtjSearchBtn">搜索</button>
+        </div>
+        <button class="dtj-btn dtj-btn-primary" id="dtjSubmitOpen">投稿入口</button>
+        <button class="dtj-burger" id="dtjBurger" aria-label="展开导航">☰</button>
+      </div>
+    </div>
+    <div class="dtj-search-feedback" id="dtjSearchFeedback"></div>
+  </header>
+</div>
+
+<!-- S2 品牌首屏 -->
+<section class="dtj-hero" id="dtj-hero">
+  <div class="dtj-hero-grid">
+    <div>
+      <span class="dtj-hero-tag"><span></span>官方网站 · 每日更新 · 持续运营中</span>
+      <h1>91推特每日大赛</h1>
+      <p class="dtj-hero-slogan">让每一次创作，都值得被高清看见</p>
+      <p class="dtj-hero-intro">
+        作为深耕影像内容领域的视频品牌，91推特每日大赛官方网站致力于为创作者与企业搭建高品质内容生态。我们以每日赛事为纽带，汇聚原创影像、创作者故事与行业观察，把真实的表达、专业的态度与温暖陪伴，沉淀为值得信赖的社区资产。从选题策划到高清发布，从挑战报名到投票互动，平台全程陪伴每一位创作者成长。
+      </p>
+      <div class="dtj-hero-actions">
+        <a class="dtj-btn dtj-btn-primary" href="#dtj-videos">观看今日精选</a>
+        <a class="dtj-btn dtj-btn-ghost" href="#dtj-topics">进入赛事企划</a>
+        <a class="dtj-btn dtj-btn-ghost" href="#dtj-authors">认识创作者</a>
+      </div>
+      <div class="dtj-hero-stats">
+        <div class="dtj-hero-stat"><b>2,860+</b><span>官方精选作品累计发布</span></div>
+        <div class="dtj-hero-stat"><b>12.6 万</b><span>社区创作者注册参与</span></div>
+        <div class="dtj-hero-stat"><b>98.3%</b><span>用户口碑好评率</span></div>
+      </div>
+    </div>
+    <div class="dtj-hero-visual">
+      <div class="dtj-hero-shot">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 550'%3E%3Crect width='800' height='550' fill='%23111827'/%3E%3Crect x='0' y='380' width='800' height='170' fill='%23f97316' opacity='.16'/%3E%3Ccircle cx='640' cy='120' r='150' fill='%23f97316' opacity='.18'/%3E%3Ccircle cx='160' cy='160' r='110' fill='%230f766e' opacity='.22'/%3E%3Cpath d='M0 300 Q200 250 400 300 T800 290' stroke='%23f97316' stroke-width='3' fill='none' opacity='.7'/%3E%3Cpath d='M0 330 Q200 280 400 330 T800 320' stroke='%23fdba74' stroke-width='2' fill='none' opacity='.45'/%3E%3Crect x='70' y='70' width='260' height='26' rx='13' fill='%23f97316' opacity='.85'/%3E%3Crect x='70' y='112' width='170' height='16' rx='8' fill='%23ffffff' opacity='.72'/%3E%3Crect x='70' y='140' width='220' height='12' rx='6' fill='%23ffffff' opacity='.36'/%3E%3Ccircle cx='640' cy='330' r='86' fill='none' stroke='%23ffffff' stroke-width='2' opacity='.4'/%3E%3Cpath d='M612 330 L668 330 M640 302 L640 358' stroke='%23f97316' stroke-width='6' stroke-linecap='round'/%3E%3Crect x='330' y='420' width='400' height='22' rx='11' fill='%23ffffff' opacity='.14'/%3E%3Crect x='330' y='456' width='280' height='14' rx='7' fill='%23ffffff' opacity='.1'/%3E%3Ctext x='70' y='500' fill='%23fde68a' font-family='Arial' font-size='22' font-weight='bold'%3EDAILY ARENA%3C/text%3E%3C/svg%3E" alt="91推特每日大赛首屏主视觉：墨色背景上的赛程数据线与播放图标构成品牌标识" width="800" height="550">
+      </div>
+      <div class="dtj-hero-badge">
+        <div class="dtj-hero-badge-ico">▶</div>
+        <div>
+          <b>今日已上线 36 条</b>
+          <span>官方审核 · 每日 20:00 更新</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S3 焦点内容 -->
+<section class="dtj-section" id="dtj-focus">
+  <div class="dtj-wrap">
+    <div class="dtj-section-head">
+      <div>
+        <span class="dtj-kicker">Focus / 焦点推荐</span>
+        <h2 class="dtj-h2">今日 <em>91推特每日大赛</em> 焦点内容</h2>
+        <p class="dtj-section-desc">编辑组从当日投稿中挑出最具代表性的影像与故事，兼顾专业品质与社区温度。</p>
+      </div>
+    </div>
+    <div class="dtj-focus-grid">
+      <article class="dtj-focus-main">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%231e3a8a'/%3E%3Crect x='0' y='300' width='800' height='150' fill='%230f172a' opacity='.5'/%3E%3Ccircle cx='600' cy='150' r='120' fill='%23f97316' opacity='.35'/%3E%3Ccircle cx='180' cy='110' r='70' fill='%23ffffff' opacity='.14'/%3E%3Cpath d='M80 340 L240 200 L360 300 L500 160 L700 340' stroke='%23fdba74' stroke-width='4' fill='none' opacity='.8'/%3E%3Crect x='80' y='60' width='200' height='20' rx='10' fill='%23fde68a' opacity='.8'/%3E%3Crect x='80' y='94' width='130' height='12' rx='6' fill='%23ffffff' opacity='.5'/%3E%3Ctext x='80' y='410' fill='%23ffffff' font-family='Arial' font-size='18' opacity='.85'%3EEDITOR'S PICK · DAILY 128%3C/text%3E%3C/svg%3E" alt="焦点作品封面：城市夜行记录中的赛程轨迹与橙色光斑" width="800" height="450">
+        <div class="dtj-focus-body">
+          <h3>城市夜行 72 小时：一条街的十二种生活切面</h3>
+          <p>创作者「林深见鹿」用三天时间记录同一街区从清晨到深夜的变化，采访了早餐摊主、夜班护士与街头乐手。作品以克制的镜头语言呈现城市真实肌理，上线 6 小时进入当日热度榜首位。</p>
+          <div class="dtj-meta">
+            <span class="dtj-author-chip"><span class="dtj-avatar" style="background:#f97316">林</span>林深见鹿</span>
+            <span>12.8 万播放</span>
+            <span>4,260 点赞</span>
+            <span>#城市探索 #日常记录</span>
+          </div>
+        </div>
+      </article>
+      <div class="dtj-focus-list">
+        <article class="dtj-focus-item">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 180'%3E%3Crect width='240' height='180' fill='%230f766e'/%3E%3Ccircle cx='180' cy='50' r='46' fill='%23fde68a' opacity='.6'/%3E%3Cpath d='M20 140 L70 90 L110 130 L160 70 L220 140' stroke='%23ffffff' stroke-width='3' fill='none' opacity='.8'/%3E%3Crect x='20' y='24' width='90' height='12' rx='6' fill='%23ffffff' opacity='.65'/%3E%3C/svg%3E" alt="作品封面：山野露营清晨的第一缕光" width="240" height="180">
+          <div>
+            <h3>山野露营的第一缕光</h3>
+            <p>48 小时无人区记录，轻量装备实测与营地搭建全流程。</p>
+            <span class="dtj-tag dtj-tag-green">#户外活动</span><span class="dtj-tag">#实用技巧</span>
+          </div>
+        </article>
+        <article class="dtj-focus-item">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 180'%3E%3Crect width='240' height='180' fill='%237c2d12'/%3E%3Crect x='24' y='104' width='52' height='52' rx='8' fill='%23fdba74'/%3E%3Crect x='92' y='76' width='52' height='80' rx='8' fill='%23fde68a' opacity='.8'/%3E%3Crect x='160' y='48' width='52' height='108' rx='8' fill='%23ffffff' opacity='.55'/%3E%3Ccircle cx='46' cy='48' r='20' fill='%23f97316'/%3E%3C/svg%3E" alt="作品封面：一人食厨房的暖橙色灯光与器皿" width="240" height="180">
+          <div>
+            <h3>一人食的十二道家常菜</h3>
+            <p>从备菜到收纳，给独居生活一套可复制的厨房方法论。</p>
+            <span class="dtj-tag">#美食烹饪</span><span class="dtj-tag">#生活方式</span>
+          </div>
+        </article>
+        <article class="dtj-focus-item">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 180'%3E%3Crect width='240' height='180' fill='%23312e81'/%3E%3Ccircle cx='120' cy='90' r='52' fill='none' stroke='%23c7d2fe' stroke-width='3'/%3E%3Ccircle cx='120' cy='90' r='26' fill='%23f97316' opacity='.85'/%3E%3Cpath d='M120 38 L120 20 M120 160 L120 142 M68 90 L50 90 M190 90 L172 90' stroke='%23ffffff' stroke-width='2' opacity='.6'/%3E%3C/svg%3E" alt="作品封面：深夜访谈镜头的抽象光圈" width="240" height="180">
+          <div>
+            <h3>深夜访谈：创作者的第二个十年</h3>
+            <p>与三位十年以上创作者聊职业焦虑、内容节奏与长期主义。</p>
+            <span class="dtj-tag dtj-tag-blue">#人物访谈</span><span class="dtj-tag dtj-tag-blue">#行业观察</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 热门视频流 -->
+<section class="dtj-section" id="dtj-videos" style="background:#fbfaf8;border-top:1px solid var(--dtj-line);border-bottom:1px solid var(--dtj-line)">
+  <div class="dtj-wrap">
+    <div class="dtj-section-head">
+      <div>
+        <span class="dtj-kicker">Trending / 热门视频</span>
+        <h2 class="dtj-h2">91推特每日大赛 <em>热门视频流</em></h2>
+        <p class="dtj-section-desc">按当日互动数据排序，实时更新播放、点赞与收藏，点击右侧按钮即可参与互动。</p>
+      </div>
+    </div>
+    <div class="dtj-video-list" id="dtjVideoList">
+      <article class="dtj-video-row">
+        <div class="dtj-video-rank">01</div>
+        <div>
+          <h3 class="dtj-video-title">凌晨四点的菜市场：一座城市的胃与良心</h3>
+          <p class="dtj-video-summary">跟拍蔬菜批发商老周的 18 个小时，聊价格、聊天气、也聊孩子上学。镜头平稳，没有配乐，只有真实的环境声。</p>
+          <div class="dtj-video-info">
+            <span class="dtj-author-chip"><span class="dtj-avatar" style="background:#0f766e">周</span>硬糖纪录</span>
+            <span>9.6 万播放</span><span>3,180 点赞</span><span>1,240 收藏</span>
+            <span class="dtj-tag">#日常记录</span><span class="dtj-tag">#城市探索</span>
+          </div>
+        </div>
+        <div class="dtj-video-actions">
+          <button class="dtj-act" data-like>♥ 点赞</button>
+          <button class="dtj-act heart" data-fav>☆ 收藏</button>
+          <button class="dtj-act" data-share>分享</button>
+        </div>
+      </article>
+      <article class="dtj-video-row">
+        <div class="dtj-video-rank">02</div>
+        <div>
+          <h3 class="dtj-video-title">三分钟讲透剪辑节奏：让日常素材也有电影感</h3>
+          <p class="dtj-video-summary">从卡点逻辑到转场选择，配合四组前后对比示例，适合刚接触剪辑的新手创作者收藏反复观看。</p>
+          <div class="dtj-video-info">
+            <span class="dtj-author-chip"><span class="dtj-avatar" style="background:#1e3a8a">剪</span>剪影手册</span>
+            <span>8.2 万播放</span><span>4,520 点赞</span><span>2,860 收藏</span>
+            <span class="dtj-tag dtj-tag-blue">#教程干货</span><span class="dtj-tag dtj-tag-blue">#创作幕后</span>
+          </div>
+        </div>
+        <div class="dtj-video-actions">
+          <button class="dtj-act" data-like>♥ 点赞</button>
+          <button class="dtj-act heart" data-fav>☆ 收藏</button>
+          <button class="dtj-act" data-share>分享</button>
+        </div>
+      </article>
+      <article class="dtj-video-row">
+        <div class="dtj-video-rank">03</div>
+        <div>
+          <h3 class="dtj-video-title">这盏灯我用了 90 天：家居照明深度测评</h3>
+          <p class="dtj-video-summary">显色指数、频闪、色温调节逐项实测，附赠不同户型客厅的布灯方案，把选购焦虑讲清楚。</p>
+          <div class="dtj-video-info">
+            <span class="dtj-author-chip"><span class="dtj-avatar" style="background:#c2410c">灯</span>灯泡研究所</span>
+            <span>7.4 万播放</span><span>2,960 点赞</span><span>1,780 收藏</span>
+            <span class="dtj-tag">#深度测评</span><span class="dtj-tag">#家居收纳</span>
+          </div>
+        </div>
+        <div class="dtj-video-actions">
+          <button class="dtj-act" data-like>♥ 点赞</button>
+          <button class="dtj-act heart" data-fav>☆ 收藏</button>
+          <button class="dtj-act" data-share>分享</button>
+        </div>
+      </article>
+      <article class="dtj-video-row">
+        <div class="dtj-video-rank">04</div>
+        <div>
+          <h3 class="dtj-video-title">在旧书店待一整天，会遇到什么人</h3>
+          <p class="dtj-video-summary">跟随店主整理书架、为顾客找书、听一段关于旧书的往事。安静的影像，适合睡前慢慢看完。</p>
+          <div class="dtj-video-info">
+            <span class="dtj-author-chip"><span class="dtj-avatar" style="background:#7c3aed">旧</span>纸页之间</span>
+            <span>6.1 万播放</span><span>2,240 点赞</span><span>980 收藏</span>
+            <span class="dtj-tag dtj-tag-blue">#治愈影像</span><span class="dtj-tag dtj-tag-blue">#在地文化</span>
+          </div>
+        </div>
+        <div class="dtj-video-actions">
+          <button class="dtj-act" data-like>♥ 点赞</button>
+          <button class="dtj-act heart" data-fav>☆ 收藏</button>
+          <button class="dtj-act" data-share>分享</button>
+        </div>
+      </article>
+      <article class="dtj-video-row">
+        <div class="dtj-video-rank">05</div>
+        <div>
+          <h3 class="dtj-video-title">从 0 到 1 打造一个手作工作室：成本与避坑清单</h3>
+          <p class="dtj-video-summary">场地、设备、耗材、推广四本账全部公开，附上踩过的七个坑，适合准备开始做手作品牌的创作者。</p>
+          <div class="dtj-video-info">
+            <span class="dtj-author-chip"><span class="dtj-avatar" style="background:#b45309">木</span>木白手作</span>
+            <span>5.8 万播放</span><span>2,060 点赞</span><span>1,420 收藏</span>
+            <span class="dtj-tag dtj-tag-green">#手作DIY</span><span class="dtj-tag dtj-tag-green">#经验分享</span>
+          </div>
+        </div>
+        <div class="dtj-video-actions">
+          <button class="dtj-act" data-like>♥ 点赞</button>
+          <button class="dtj-act heart" data-fav>☆ 收藏</button>
+          <button class="dtj-act" data-share>分享</button>
+        </div>
+      </article>
+      <article class="dtj-video-row">
+        <div class="dtj-video-rank">06</div>
+        <div>
+          <h3 class="dtj-video-title">跑步第 300 天：身体与情绪一起变好的证据</h3>
+          <p class="dtj-video-summary">用一组体重、配速、睡眠数据串起一年的变化，不鼓吹自律，只讲可执行的小习惯。</p>
+          <div class="dtj-video-info">
+            <span class="dtj-author-chip"><span class="dtj-avatar" style="background:#15803d">跑</span>慢跑计划</span>
+            <span>5.2 万播放</span><span>1,860 点赞</span><span>760 收藏</span>
+            <span class="dtj-tag dtj-tag-green">#健康运动</span><span class="dtj-tag dtj-tag-green">#情感故事</span>
+          </div>
+        </div>
+        <div class="dtj-video-actions">
+          <button class="dtj-act" data-like>♥ 点赞</button>
+          <button class="dtj-act heart" data-fav>☆ 收藏</button>
+          <button class="dtj-act" data-share>分享</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 关键词深度解析 -->
+<section class="dtj-section dtj-analysis" id="dtj-analysis">
+  <div class="dtj-wrap">
+    <div class="dtj-section-head">
+      <div>
+        <span class="dtj-kicker">Insight / 深度解析</span>
+        <h2 class="dtj-h2">关于 <em>91推特每日大赛</em> 的内容生态</h2>
+        <p class="dtj-section-desc">从赛事机制到社区运营，我们把这套体系拆开来讲，帮助创作者更高效地参与，也帮助用户理解平台的内容主张。</p>
+      </div>
+    </div>
+    <div class="dtj-analysis-grid">
+      <div class="dtj-analysis-card">
+        <h3><i>01</i>赛事机制：为什么是“每日”而不是“集中”</h3>
+        <p>91推特每日大赛 的核心设计是高频、轻量、可持续。与一次性集中评比不同，每日赛程把创作压力切成 24 小时的小块，让创作者可以在稳定节奏里迭代，而不是为了一场大赛憋一个大招。每天 20:00 为当日截止时间，系统按投稿时间入池，第二天 10:00 公布当日精选与热度结果。</p>
+        <p>这种机制带来三个直接好处：第一，创作者能保持<span class="dtj-analysis-hl">持续运营</span>的手感，选题、拍摄、剪辑形成肌肉记忆；第二，用户可以每天有确定的期待，社区活跃度不依赖某个大事件；第三，编辑组有时间逐条审核，保证<span class="dtj-analysis-hl">原创、正版、高清</span>三条底线不被稀释。赛程之外，每月最后一周设置月度总榜，把日榜中表现稳定的创作者再次推到台前，形成“日赛—周榜—月度总评”的三级结构。</p>
+      </div>
+      <div class="dtj-analysis-card">
+        <h3><i>02</i>内容标准：把“品质”拆成可执行的清单</h3>
+        <p>我们把品质拆成四个维度：画面、叙事、声音、信息密度。画面要求主体清晰、曝光稳定，允许风格化但不接受严重压缩；叙事要求有明确的起承转合，哪怕是三分钟的日常记录也应该有一个问题意识；声音要求人声清晰、环境声合理，避免整段盖用无版权音乐；信息密度则要求作品对观看者“有用”，无论是情绪价值还是方法价值。</p>
+        <p>审核组每天会给出结构化反馈，创作者可以在个人主页查看。这一机制让「91推特每日大赛」不只是一个投稿池，更像一个<span class="dtj-analysis-hl">专业</span>的公开练习场。我们也定期整理高频问题，沉淀为《创作者手册》，目前已经更新到第七版，覆盖选题、脚本、拍摄、剪辑、封面、标题、发布节奏七个环节，帮助新创作者少走弯路。</p>
+      </div>
+      <div class="dtj-analysis-card">
+        <h3><i>03</i>社区生态：创作者、用户与品牌如何互相成就</h3>
+        <p>平台上的角色大致分为三类：创作者、普通用户、品牌方。创作者提供内容，用户提供反馈与传播，品牌方提供商业合作与资源。91推特每日大赛 作为<span class="dtj-analysis-hl">垂直领域</span>的视频社区，要做的是把三者之间的匹配成本降下来。我们做过一次抽样：一条进入当日精选的作品，平均能获得 3.1 倍于平时的完播率，以及约 2.4 倍的粉丝转化。</p>
+        <p>这背后不是简单的流量倾斜，而是标签体系的功劳。每个作品会被打上题材、地域、风格、时长四类标签，用户在浏览时自然形成偏好画像，系统据此推荐。我们还开放了「同好小组」功能，让兴趣相近的创作者互相点评、联合创作。过去一年，由小组孵化出的联合作品超过 400 条，其中 37 条进入月度总榜，形成了良性的<span class="dtj-analysis-hl">内容生态</span>循环。</p>
+      </div>
+      <div class="dtj-analysis-card">
+        <h3><i>04</i>长期价值：为什么值得信赖</h3>
+        <p>视频平台的竞争，最终是信任的竞争。91推特每日大赛 坚持几件看起来“慢”的事：不做标题党推荐、不鼓励无限拉长时长、不对数据进行注水。我们希望用户打开页面时，知道自己看到的是经过筛选的<span class="dtj-analysis-hl">精品内容</span>，而不是算法的即时投喂。</p>
+        <p>在数据层面，平台公开展示播放、点赞、收藏与完播率四项指标，创作者可以据此判断作品问题出在哪一环。在商业层面，合作品牌需通过内容合规审查，避免影响社区氛围。在运营层面，我们保留人工编辑岗位，每日至少人工浏览 300 条投稿。这些做法并不炫目，但正是它们让 91推特每日大赛 成为许多创作者口中“值得信赖”的创作平台，也让品牌方愿意长期合作。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S4 专题企划 -->
+<section class="dtj-section" id="dtj-topics">
+  <div class="dtj-wrap">
+    <div class="dtj-section-head">
+      <div>
+        <span class="dtj-kicker">Series / 专题企划</span>
+        <h2 class="dtj-h2"><em>91推特每日大赛</em> 正在进行的三组专题</h2>
+        <p class="dtj-section-desc">专题由编辑组发起，创作者自由报名，围绕同一主题持续产出，最终汇成一份可检索的影像档案。</p>
+      </div>
+    </div>
+    <div class="dtj-topic-grid">
+      <article class="dtj-topic">
+        <span class="dtj-topic-status live">更新中 · 第 3 周</span>
+        <h3>一座城的十二时辰</h3>
+        <p>以时间为线索，记录城市从清晨到深夜的不同切面。鼓励创作者走到现场，用环境声与长镜头呈现真实。</p>
+        <ol>
+          <li><i>·</i>凌晨四点的批发市场与第一班公交</li>
+          <li><i>·</i>正午写字楼里的十分钟午餐</li>
+          <li><i>·</i>午夜便利店与代驾司机的对话</li>
+        </ol>
+      </article>
+      <article class="dtj-topic">
+        <span class="dtj-topic-status">报名中 · 剩余 5 天</span>
+        <h3>我的第一件手作品</h3>
+        <p>从失败到成品的完整记录，重点讲清楚过程里的取舍与成本，欢迎手作、木工、陶艺、布艺创作者参与。</p>
+        <ol>
+          <li><i>·</i>一块边角木料变成托盘的三次返工</li>
+          <li><i>·</i>第一次拉坯失败后我改了什么</li>
+          <li><i>·</i>给朋友做的第一只帆布包</li>
+        </ol>
+      </article>
+      <article class="dtj-topic">
+        <span class="dtj-topic-status">已完结 · 可回看</span>
+        <h3>创作者的第二个十年</h3>
+        <p>对话长期创作的影像工作者，讨论职业寿命、内容转型与收入结构，适合准备长期投入的创作者观看。</p>
+        <ol>
+          <li><i>·</i>从广告导演到独立纪录者的转身</li>
+          <li><i>·</i>十年更新 800 条视频的节奏管理</li>
+          <li><i>·</i>当流量退潮，创作者靠什么留下</li>
+        </ol>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- S5 创作者/作者矩阵 -->
+<section class="dtj-section" id="dtj-authors" style="background:#fbfaf8;border-top:1px solid var(--dtj-line);border-bottom:1px solid var(--dtj-line)">
+  <div class="dtj-wrap">
+    <div class="dtj-section-head">
+      <div>
+        <span class="dtj-kicker">Creators / 创作者</span>
+        <h2 class="dtj-h2">在 <em>91推特每日大赛</em> 持续创作的六位创作者</h2>
+        <p class="dtj-section-desc">他们来自不同领域，却共享同一种认真：把每一件小事拍清楚，把每一段经验讲明白。</p>
+      </div>
+    </div>
+    <div class="dtj-author-grid">
+      <article class="dtj-author-card">
+        <div class="dtj-author-face" style="background:#0f766e">林</div>
+        <div>
+          <h3>林深见鹿 <small>城市纪录</small></h3>
+          <p class="dtj-author-field">擅长领域：城市探索 · 日常记录 · 人物访谈</p>
+          <p class="dtj-author-desc">前新闻摄影记者，习惯用长镜头观察街区。作品节奏偏慢，重视环境声与现场感，喜欢把话筒交给普通人。相信城市的故事不在高处，而在菜市场、公交站与楼道里。</p>
+          <div class="dtj-author-nums"><span><b>86</b> 作品</span><span><b>4.2 万</b> 粉丝</span><span><b>12</b> 次精选</span></div>
+        </div>
+      </article>
+      <article class="dtj-author-card">
+        <div class="dtj-author-face" style="background:#1e3a8a">剪</div>
+        <div>
+          <h3>剪影手册 <small>教程干货</small></h3>
+          <p class="dtj-author-field">擅长领域：剪辑教程 · 创作幕后 · 实用技巧</p>
+          <p class="dtj-author-desc">剪辑师出身，擅长把复杂的软件操作拆成可跟做的步骤。每条教程都会给出素材包与练习作业，强调“看完就能动手”。风格直给，不绕弯子，是新手创作者收藏夹里的常客。</p>
+          <div class="dtj-author-nums"><span><b>132</b> 作品</span><span><b>6.8 万</b> 粉丝</span><span><b>21</b> 次精选</span></div>
+        </div>
+      </article>
+      <article class="dtj-author-card">
+        <div class="dtj-author-face" style="background:#c2410c">灯</div>
+        <div>
+          <h3>灯泡研究所 <small>深度测评</small></h3>
+          <p class="dtj-author-field">擅长领域：家居收纳 · 深度测评 · 实用技巧</p>
+          <p class="dtj-author-desc">工业设计背景，喜欢把参数讲成人话。测评周期通常长达一个月以上，会公开测试方法与原始数据。不接软性植入，观点独立，常被用户称为“买前必看”的参考坐标。</p>
+          <div class="dtj-author-nums"><span><b>58</b> 作品</span><span><b>3.6 万</b> 粉丝</span><span><b>9</b> 次精选</span></div>
+        </div>
+      </article>
+      <article class="dtj-author-card">
+        <div class="dtj-author-face" style="background:#7c3aed">旧</div>
+        <div>
+          <h3>纸页之间 <small>治愈影像</small></h3>
+          <p class="dtj-author-field">擅长领域：治愈影像 · 在地文化 · 情感故事</p>
+          <p class="dtj-author-desc">独立书店店员，业余拍摄书店与老街区。作品几乎没有旁白，依靠画面与自然声推进。她认为治愈不是逃避，而是让人重新获得面对日常的力气，因此镜头总是温柔而克制。</p>
+          <div class="dtj-author-nums"><span><b>47</b> 作品</span><span><b>2.9 万</b> 粉丝</span><span><b>7</b> 次精选</span></div>
+        </div>
+      </article>
+      <article class="dtj-author-card">
+        <div class="dtj-author-face" style="background:#b45309">木</div>
+        <div>
+          <h3>木白手作 <small>手作DIY</small></h3>
+          <p class="dtj-author-field">擅长领域：手作DIY · 经验分享 · 创作幕后</p>
+          <p class="dtj-author-desc">木工工作室主理人，作品常从“失败”开始讲起，把返工、废料与预算超支都留在镜头里。他相信手作的价值不在完美成品，而在过程中人与材料的反复磨合，因此视频真实感很强。</p>
+          <div class="dtj-author-nums"><span><b>74</b> 作品</span><span><b>3.1 万</b> 粉丝</span><span><b>11</b> 次精选</span></div>
+        </div>
+      </article>
+      <article class="dtj-author-card">
+        <div class="dtj-author-face" style="background:#15803d">跑</div>
+        <div>
+          <h3>慢跑计划 <small>健康运动</small></h3>
+          <p class="dtj-author-field">擅长领域：健康运动 · 情感故事 · 日常记录</p>
+          <p class="dtj-author-desc">业余跑者，记录从零开始的训练过程。不鼓吹成绩，更关注睡眠、情绪与生活秩序的变化。视频常以数据图表与自述交替呈现，给想要开始运动的普通人一个可参考的样本。</p>
+          <div class="dtj-author-nums"><span><b>39</b> 作品</span><span><b>2.2 万</b> 粉丝</span><span><b>6</b> 次精选</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- S6 数据榜单 -->
+<section class="dtj-section" id="dtj-board">
+  <div class="dtj-wrap">
+    <div class="dtj-section-head">
+      <div>
+        <span class="dtj-kicker">Board / 数据榜单</span>
+        <h2 class="dtj-h2"><em>91推特每日大赛</em> 今日三张榜单</h2>
+        <p class="dtj-section-desc">热度看传播，新人看成长，口碑看长期。三个维度交叉，才能看清一条作品的真实位置。</p>
+      </div>
+    </div>
+    <div class="dtj-board-grid">
+      <div class="dtj-board">
+        <h3>热度榜 <span>按当日互动总量</span></h3>
+        <ol>
+          <li><b>1</b><span class="nm">凌晨四点的菜市场</span><span class="vv">9.6w</span></li>
+          <li><b>2</b><span class="nm">三分钟讲透剪辑节奏</span><span class="vv">8.2w</span></li>
+          <li><b>3</b><span class="nm">这盏灯我用了 90 天</span><span class="vv">7.4w</span></li>
+          <li><b>4</b><span class="nm">在旧书店待一整天</span><span class="vv">6.1w</span></li>
+          <li><b>5</b><span class="nm">手作工作室成本清单</span><span class="vv">5.8w</span></li>
+          <li><b>6</b><span class="nm">跑步第 300 天</span><span class="vv">5.2w</span></li>
+        </ol>
+      </div>
+      <div class="dtj-board">
+        <h3>新人榜 <span>注册 90 天内</span></h3>
+        <ol>
+          <li><b>1</b><span class="nm">城南散步指南</span><span class="vv">+2,180</span></li>
+          <li><b>2</b><span class="nm">一杯手冲的时间</span><span class="vv">+1,940</span></li>
+          <li><b>3</b><span class="nm">旧物修复日记</span><span class="vv">+1,720</span></li>
+          <li><b>4</b><span class="nm">阳台种菜记录</span><span class="vv">+1,510</span></li>
+          <li><b>5</b><span class="nm">凌晨的便利店</span><span class="vv">+1,260</span></li>
+          <li><b>6</b><span class="nm">猫咪的一天</span><span class="vv">+1,080</span></li>
+        </ol>
+      </div>
+      <div class="dtj-board">
+        <h3>口碑榜 <span>完播与好评综合</span></h3>
+        <ol>
+          <li><b>1</b><span class="nm">创作者的第二个十年</span><span class="vv">9.7</span></li>
+          <li><b>2</b><span class="nm">在旧书店待一整天</span><span class="vv">9.5</span></li>
+          <li><b>3</b><span class="nm">山野露营的第一缕光</span><span class="vv">9.4</span></li>
+          <li><b>4</b><span class="nm">一人食的十二道家常菜</span><span class="vv">9.2</span></li>
+          <li><b>5</b><span class="nm">一块边角木料的三次返工</span><span class="vv">9.1</span></li>
+          <li><b>6</b><span class="nm">城市夜行 72 小时</span><span class="vv">9.0</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S6 用户评价 -->
+<section class="dtj-section" id="dtj-comments" style="background:#fbfaf8;border-top:1px solid var(--dtj-line);border-bottom:1px solid var(--dtj-line)">
+  <div class="dtj-wrap">
+    <div class="dtj-section-head">
+      <div>
+        <span class="dtj-kicker">Voices / 用户评价</span>
+        <h2 class="dtj-h2">他们眼中的 <em>91推特每日大赛</em></h2>
+        <p class="dtj-section-desc">来自创作者、观众与合作方的真实反馈，语气不同，关注点也不同。</p>
+      </div>
+    </div>
+    <div class="dtj-comment-grid">
+      <div class="dtj-comment">
+        <p>“第一次投稿就被编辑写了 200 多字反馈，指出了我转场太碎的问题，还给了两个参考片。这种认真程度在同类平台里不多见。”</p>
+        <div class="dtj-comment-foot"><span class="dtj-avatar" style="background:#0f766e">阿</span>阿泽 <span class="dtj-stars">★★★★★</span> · 创作者</div>
+      </div>
+      <div class="dtj-comment">
+        <p>“每天晚上八点看当天精选已经成习惯了，选题比很多大平台更接地气，能看到普通人的生活。”</p>
+        <div class="dtj-comment-foot"><span class="dtj-avatar" style="background:#1e3a8a">小</span>小满 <span class="dtj-stars">★★★★★</span> · 观众</div>
+      </div>
+      <div class="dtj-comment">
+        <p>剪辑教程那几期真的救了我。以前只知道堆转场，现在会先想清楚节奏再动手。</p>
+        <div class="dtj-comment-foot"><span class="dtj-avatar" style="background:#c2410c">图</span>图图 <span class="dtj-stars">★★★★☆</span> · 新手创作者</div>
+      </div>
+      <div class="dtj-comment">
+        <p>合作过一次专题，流程很规范，从选题确认到成片审核都有明确节点，预算也透明。希望以后多一些品牌联合企划。</p>
+        <div class="dtj-comment-foot"><span class="dtj-avatar" style="background:#7c3aed">合</span>某家居品牌市场部 <span class="dtj-stars">★★★★★</span> · 合作方</div>
+      </div>
+      <div class="dtj-comment">
+        <p>内容不错，就是希望能加一个按城市筛选的功能，我想看本地创作者拍的东西。</p>
+        <div class="dtj-comment-foot"><span class="dtj-avatar" style="background:#b45309">路</span>路过的观众 <span class="dtj-stars">★★★☆☆</span> · 观众</div>
+      </div>
+      <div class="dtj-comment">
+        <p>“社区氛围比较友好，评论区很少有人吵架，大家更愿意讨论拍摄手法和观点，这点很珍贵。”</p>
+        <div class="dtj-comment-foot"><span class="dtj-avatar" style="background:#15803d">森</span>森野 <span class="dtj-stars">★★★★★</span> · 创作者</div>
+      </div>
+      <div class="dtj-comment">
+        <p>新人榜让我坚持更新了三个月，虽然还没上热度榜，但能感觉到自己在进步。</p>
+        <div class="dtj-comment-foot"><span class="dtj-avatar" style="background:#be123c">柚</span>柚子 <span class="dtj-stars">★★★★☆</span> · 新人创作者</div>
+      </div>
+      <div class="dtj-comment">
+        <p>画质和声音处理整体在线，看得出审核是认真的，不会点进去被压缩得糊成一片。</p>
+        <div class="dtj-comment-foot"><span class="dtj-avatar" style="background:#0369a1">听</span>听见风 <span class="dtj-stars">★★★★☆</span> · 观众</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S7 企业动态 + FAQ -->
+<section class="dtj-section" id="dtj-faq">
+  <div class="dtj-wrap">
+    <div class="dtj-section-head">
+      <div>
+        <span class="dtj-kicker">Updates &amp; FAQ</span>
+        <h2 class="dtj-h2">企业动态与 <em>常见问题</em></h2>
+        <p class="dtj-section-desc">官方发布、功能更新、赛事规则调整，都会第一时间同步在这里；遇到问题也可以先看看帮助中心。</p>
+      </div>
+    </div>
+    <div class="dtj-news-faq">
+      <div>
+        <h3 class="dtj-h3" style="margin-bottom:14px">企业动态</h3>
+        <ul class="dtj-news">
+          <li>
+            <time>2026-11-20</time>
+            <div>
+              <h3>创作者手册第七版发布</h3>
+              <p>新增“声音设计”与“封面信息层级”两章内容，同步更新 FAQ 条目 12 条。</p>
+            </div>
+          </li>
+          <li>
+            <time>2026-11-15</time>
+            <div>
+              <h3>同好小组功能正式上线</h3>
+              <p>支持兴趣小组创建、联合投稿与互评，首批开放城市、手作、运动三个方向。</p>
+            </div>
+          </li>
+          <li>
+            <time>2026-11-08</time>
+            <div>
+              <h3>月度总榜评选规则优化</h3>
+              <p>完播率与口碑评分的权重上调，降低单日爆发对月度结果的影响。</p>
+            </div>
+          </li>
+          <li>
+            <time>2026-10-30</time>
+            <div>
+              <h3>官方内容存档计划启动</h3>
+              <p>将年度精选作品整理为可检索的影像档案，提供给创作者与研究者参考。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="dtj-faq">
+        <h3 class="dtj-h3" style="margin-bottom:14px">常见问题</h3>
+        <details open>
+          <summary>如何参加 91推特每日大赛？</summary>
+          <p>注册账号并完成实名认证后，在投稿入口上传作品，填写标题、简介与标签即可进入当日赛程。每位创作者每日最多提交两条作品，跨日不累计。</p>
+        </details>
+        <details>
+          <summary>作品审核一般需要多久？</summary>
+          <p>工作日通常在 4 小时内完成初审，节假日可能延长至 8 小时。若作品需要补充素材或说明，审核组会通过站内信联系，请在 48 小时内回复。</p>
+        </details>
+        <details>
+          <summary>为什么我的作品没有进入精选？</summary>
+          <p>精选综合画面、叙事、声音与信息密度四项标准，同时考虑当日题材分布。未入选不代表作品不合格，可以在个人主页查看具体反馈并继续优化。</p>
+        </details>
+        <details>
+          <summary>平台对原创与版权有什么要求？</summary>
+          <p>投稿作品须为创作者原创或拥有完整授权，使用的音乐、字体、素材需确保可商用。发现侵权将下架作品并暂停投稿权限，情节严重者终止合作。</p>
+        </details>
+        <details>
+          <summary>可以提交横向与纵向两种画幅吗？</summary>
+          <p>都可以。平台支持 16:9、9:16 与 1:1 三种画幅，审核时会按画幅适配不同的推荐位，创作者只需保证画面主体完整即可。</p>
+        </details>
+        <details>
+          <summary>热度榜的计算方式是什么？</summary>
+          <p>热度由播放完成度、点赞、收藏、分享与评论互动综合计算，并对异常流量进行过滤。榜单每日 22:00 更新一次，展示当日截至 21:00 的数据。</p>
+        </details>
+        <details>
+          <summary>品牌方如何发起合作？</summary>
+          <p>可通过页面底部联系方式提交合作需求，注明合作形式、预算区间与时间节点。平台会在 3 个工作日内回复，并安排内容合规审查。</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 合作品牌 -->
+<section class="dtj-section" style="padding-top:0">
+  <div class="dtj-wrap">
+    <div class="dtj-section-head">
+      <div>
+        <span class="dtj-kicker">Partners / 合作品牌</span>
+        <h2 class="dtj-h2"><em>91推特每日大赛</em> 的长期合作伙伴</h2>
+      </div>
+    </div>
+    <div class="dtj-partners">
+      <div class="dtj-partner"><b>光影器材</b><span>影像设备合作</span></div>
+      <div class="dtj-partner"><b>木白工坊</b><span>手作专题联合发起</span></div>
+      <div class="dtj-partner"><b>城南书店</b><span>在地文化场地支持</span></div>
+      <div class="dtj-partner"><b>慢跑俱乐部</b><span>健康运动内容共建</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- S8 页脚 -->
+<footer class="dtj-footer">
+  <div class="dtj-wrap">
+    <div class="dtj-footer-grid">
+      <div>
+        <div class="dtj-footer-brand">
+          <div class="dtj-brand-logo">91<span>·</span>TV</div>
+          <div>
+            <div class="dtj-brand-name" style="color:#fff">91推特每日大赛</div>
+            <div class="dtj-brand-sub" style="color:#6b7280">OFFICIAL VIDEO PORTAL</div>
+          </div>
+        </div>
+        <p>91推特每日大赛官方网站，专注于为创作者提供高品质的影像展示空间与持续运营的社区生态。从每日赛程到专题企划，我们坚持以原创、正版、高清为标准，让每一条认真拍摄的作品得到应有的关注。</p>
+      </div>
+      <div>
+        <h4>快速导航</h4>
+        <ul>
+          <li><a href="#dtj-focus">焦点推荐</a></li>
+          <li><a href="#dtj-videos">热门视频</a></li>
+          <li><a href="#dtj-topics">专题企划</a></li>
+          <li><a href="#dtj-authors">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与方式</h4>
+        <ul>
+          <li><a href="#dtj-faq">投稿规则</a></li>
+          <li><a href="#dtj-faq">赛事说明</a></li>
+          <li><a href="#dtj-board">榜单查询</a></li>
+          <li><a href="#dtj-faq">合作联系</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于我们</h4>
+        <ul>
+          <li>品牌故事与理念</li>
+          <li>企业动态</li>
+          <li>社会责任与内容合规</li>
+          <li>用户反馈渠道</li>
+        </ul>
+      </div>
+    </div>
+    <div class="dtj-footer-bottom">
+      <span>© 2026 91推特每日大赛官方网站 · 版权所有 · 持续运营中</span>
+      <span class="dtj-footer-words">
+        <span>备案号：京ICP备2026XXXXXX号</span>
+        <span>内容合规 · 原创正版</span>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<button class="dtj-top" id="dtjTopBtn" aria-label="回到顶部">↑</button>
+<div class="dtj-toast" id="dtjToast"></div>
+
+<!-- 投稿弹窗 -->
+<div class="dtj-modal-mask" id="dtjSubmitModal">
+  <div class="dtj-modal">
+    <h3>投稿入口</h3>
+    <p>填写以下信息即可提交作品至 91推特每日大赛 当日赛程，审核结果通过站内信通知。</p>
+    <label for="dtjSubTitle">作品标题</label>
+    <input type="text" id="dtjSubTitle" placeholder="例如：凌晨四点的菜市场">
+    <label for="dtjSubType">作品类型</label>
+    <select id="dtjSubType">
+      <option>日常记录</option>
+      <option>教程干货</option>
+      <option>深度测评</option>
+      <option>人物访谈</option>
+      <option>创作幕后</option>
+    </select>
+    <label for="dtjSubDesc">作品简介</label>
+    <textarea id="dtjSubDesc" rows="4" placeholder="简单介绍作品内容与拍摄过程"></textarea>
+    <div class="dtj-modal-actions">
+      <button class="dtj-btn dtj-btn-ghost" data-close>取消</button>
+      <button class="dtj-btn dtj-btn-primary" id="dtjSubmitConfirm">提交投稿</button>
+    </div>
+  </div>
+</div>
+
+<!-- 分享弹窗 -->
+<div class="dtj-modal-mask" id="dtjShareModal">
+  <div class="dtj-modal">
+    <h3>分享这条内容</h3>
+    <p>选择分享方式，或复制链接发送给朋友。</p>
+    <div class="dtj-share-list">
+      <button data-share-way="微信">微信</button>
+      <button data-share-way="微博">微博</button>
+      <button data-share-way="QQ">QQ</button>
+      <button id="dtjCopyLink">复制链接</button>
+    </div>
+    <div class="dtj-modal-actions" style="margin-top:18px">
+      <button class="dtj-btn dtj-btn-ghost" data-close>关闭</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var toast = document.getElementById('dtjToast');
+  var toastTimer = null;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('show'); }, 2200);
+  }
+
+  /* 移动端导航 */
+  var burger = document.getElementById('dtjBurger');
+  var nav = document.getElementById('dtjNav');
+  burger.addEventListener('click', function(){
+    nav.classList.toggle('open');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){ nav.classList.remove('open'); }
+  });
+
+  /* 搜索反馈 */
+  var searchInput = document.getElementById('dtjSearchInput');
+  var searchBtn = document.getElementById('dtjSearchBtn');
+  var feedback = document.getElementById('dtjSearchFeedback');
+  var pool = [
+    '凌晨四点的菜市场', '三分钟讲透剪辑节奏', '这盏灯我用了 90 天',
+    '在旧书店待一整天', '手作工作室成本清单', '跑步第 300 天',
+    '城市夜行 72 小时', '山野露营的第一缕光', '一人食的十二道家常菜',
+    '创作者的第二个十年', '一块边角木料的三次返工', '猫咪的一天'
+  ];
+  function doSearch(){
+    var kw = searchInput.value.trim();
+    if(!kw){
+      feedback.innerHTML = '请输入关键词，例如：剪辑、露营、访谈。';
+      feedback.classList.add('show');
+      return;
+    }
+    var hit = pool.filter(function(t){ return t.indexOf(kw) > -1; });
+    if(hit.length){
+      feedback.innerHTML = '找到 <b>' + hit.length + '</b> 条相关内容：' + hit.slice(0,3).join('、') + '。已按热度为你排序。';
+    } else {
+      feedback.innerHTML = '暂未找到与「' + kw.replace(/[<>&]/g,'') + '」完全匹配的作品，可尝试更短的关键词，或浏览<a href="#dtj-videos" style="color:#c2410c">热门视频流</a>。';
+    }
+    feedback.classList.add('show');
+  }
+  searchBtn.addEventListener('click', doSearch);
+  searchInput.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ doSearch(); } });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.dtj-search') && !e.target.closest('#dtjSearchFeedback')){
+      feedback.classList.remove('show');
+    }
+  });
+
+  /* 点赞 / 收藏 */
+  document.querySelectorAll('[data-like]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      btn.classList.toggle('on');
+      btn.textContent = btn.classList.contains('on') ? '♥ 已赞' : '♥ 点赞';
+      showToast(btn.classList.contains('on') ? '已点赞，感谢你的支持' : '已取消点赞');
+    });
+  });
+  document.querySelectorAll('[data-fav]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      btn.classList.toggle('on');
+      btn.textContent = btn.classList.contains('on') ? '★ 已收藏' : '☆ 收藏';
+      showToast(btn.classList.contains('on') ? '已收藏到「我的片单」' : '已取消收藏');
+    });
+  });
+
+  /* 弹窗通用 */
+  var submitModal = document.getElementById('dtjSubmitModal');
+  var shareModal = document.getElementById('dtjShareModal');
+  var submitOpen = document.getElementById('dtjSubmitOpen');
+  function openModal(m){ m.classList.add('show'); }
+  function closeAll(){ 
+    document.querySelectorAll('.dtj-modal-mask').forEach(function(m){ m.classList.remove('show'); }); 
+  }
+  submitOpen.addEventListener('click', function(){ openModal(submitModal); });
+  document.querySelectorAll('[data-close]').forEach(function(b){ b.addEventListener('click', closeAll); });
+  document.querySelectorAll('.dtj-modal-mask').forEach(function(mask){
+    mask.addEventListener('click', function(e){ if(e.target === mask){ closeAll(); } });
+  });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ closeAll(); } });
+
+  document.getElementById('dtjSubmitConfirm').addEventListener('click', function(){
+    var t = document.getElementById('dtjSubTitle').value.trim();
+    if(!t){ showToast('请先填写作品标题'); return; }
+    closeAll();
+    showToast('投稿已提交，审核结果将通过站内信通知');
+    document.getElementById('dtjSubTitle').value = '';
+    document.getElementById('dtjSubDesc').value = '';
+  });
+
+  /* 分享 */
+  document.querySelectorAll('[data-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){ openModal(shareModal); });
+  });
+  document.querySelectorAll('[data-share-way]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var way = btn.getAttribute('data-share-way');
+      closeAll();
+      showToast('已生成' + way + '分享内容，可前往对应平台粘贴');
+    });
+  });
+  document.getElementById('dtjCopyLink').addEventListener('click', function(){
+    var link = 'https://example.com/91daily';
+    function done(){
+      closeAll();
+      showToast('链接已复制，去分享给朋友吧');
+    }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(link).then(done).catch(done);
+    } else {
+      done();
+    }
+  });
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('dtjTopBtn');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 500){ topBtn.classList.add('show'); }
+    else { topBtn.classList.remove('show'); }
+  });
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+</body>
+      </html>
